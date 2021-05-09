@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body{
+	background-color: #white;
+	font-family: 'Roboto', sans-serif;
+	animation: transitionIn 2s;
+}
+
+@keyframes transitionIn{
+from {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+to{
+opacity: 1;
+  transform: translateY(0px);
+}
+}
+
+.about:active{
+	animation: transitionIn 1s;
+}
+html{
+	scroll-behavior: smooth;
+}
+.navbar{
+	background-color: white;
+}
+.navbar .navbar-brand{
+        color: rgb(250, 120, 3);
+        font-size:1.2rem;
+        font-weight: 300;
+}
+.navbar-nav{
+	position: absolute;
+	right: 40%; 
+}
+.btn{
+	position: absolute;
+	right: 2px;
+}
+
+         .btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+         .btn-grad {
+            margin: 6px;
+            padding: 5px 10px;
+            text-align: center;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 30px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+   font-size:1rem;
+   color: rgb(250, 120, 3);
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover{
+   color: #fbb01d;
+   text-decoration: underline;
+}
+
+.hero{
+	height: 100vh;
+	width: 100%;
+}
+
+.illus{
+	height: 50rem ;
+	width:  50rem;
+	position: absolute;
+	display: inline-block;
+	right: 0;
+	top: 80px;
+
+}
+.intro{
+position: absolute;
+top:300px;
+color: black;
+left: 10px;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	left: 30px;
+}
+.about .text h2{
+	color:rgb(250, 120, 3);
+	font-weight: 700;
+	font-size :1.8rem;
+	letter-spacing: 2px;
+
+}
+.about .text p{
+	font-weight: 400;
+	font-size :1.1rem;
+	letter-spacing: 0.5px;
+}
+.services .text h2{
+	color:rgb(250, 120, 3);
+	font-weight: 700;
+	font-size :1.9rem;
+	letter-spacing: 2px;
+
+}
+.services .text p{
+	font-weight: 400;
+	font-size :1rem;
+	letter-spacing: 0.5px;
+}
+h4{
+	position: relative;
+	left: 37px;
+	margin:0 0 ;
+	letter-spacing: .10em; /* Adjust as needed */
+
+}
+.about .text a{
+	text-decoration: none;
+
+}
+
+.about .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin:auto;
+}
+.services .text a{
+	text-decoration: none;
+
+}
+
+.services .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin:auto;
+}
+.example .one a{
+	text-decoration: none;
+}
+.example .two a{
+	text-decoration: none;
+}
+span{
+		font-family: 'Roboto Mono', monospace;
+        font-color: white;
+
+}
+
+
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid #fa7803 ;
+  color: #fa7803; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  position: absolute ;
+  left: 95px;
+  margin: 0 auto;  /*Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+  typing 3s steps(40,end) ,
+  blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0ch }
+  to { width: 16ch }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+body>footer{
+	background: #fa7803!important;
+
+}
+body>footer a{
+	color: white;
+	text-decoration: none;
+	}
+body>footer a:hover{
+	color: #fbb01d;
+   text-decoration: underline;
+	}
